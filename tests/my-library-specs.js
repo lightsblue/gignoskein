@@ -1,4 +1,4 @@
-define(['my-library.require'], function(myLibrary){
+define(['my-library'], function(myLibrary){
 
   describe("my-library", function(){
     describe("sayHello", function(){

@@ -20,7 +20,7 @@ require.config({
 });
 
 require(['jasmine-boot'], function () {
-  require(['../tests/my-library.specs.require'], function(){
+  require(['../tests/my-library-specs'], function(){
     //trigger Jasmine
     window.onload();
   })

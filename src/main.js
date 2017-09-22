@@ -1,5 +1,15 @@
-define(function (require) {
-  'use strict';
+'use strict';
 
-  console.log('bingo');
+define(function (require) {
+  var mylib = require('my-library'),
+    React = require('react'),
+    ReactDOM = require('react-dom');
+
+  console.log(mylib.sayHello());
+
+  ReactDOM.render(
+    React.createElement('p', {}, 'vihinen.net'),
+    document.getElementById('root')
+  );
+  
 });

@@ -1,15 +1,8 @@
 'use strict';
 
 define(function (require) {
-  var mylib = require('my-library'),
-    React = require('react'),
-    ReactDOM = require('react-dom');
+  var $ = require('jquery'),
+    resume = require("text!template/resume.html");
 
-  console.log(mylib.sayHello());
-
-  ReactDOM.render(
-    React.createElement('p', {}, 'vihinen.net'),
-    document.getElementById('root')
-  );
-  
+  $("#root").append(resume);
 });

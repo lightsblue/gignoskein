@@ -7,8 +7,9 @@ requirejs.config({
     baseUrl: 'src',
     paths: {
         'app': '../app',      
-        'react': 'https://unpkg.com/react@15.3.2/dist/react',
-        'react-dom': 'https://unpkg.com/react-dom@15.3.2/dist/react-dom'
+        'text': '../vendor/requirejs-text-2.0.15/text',
+        'jquery': '//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min',
+        'mustache': 'https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min'
     }
 });
 

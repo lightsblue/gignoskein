@@ -14,13 +14,14 @@ var canvas = window.canvas = document.querySelector('canvas');
 canvas.width = 480;
 canvas.height = 360;
 
-var button = document.querySelector('button');
-button.onclick = function() {
+function captureFrame() {
   canvas.width = video.videoWidth;
   canvas.height = video.videoHeight;
   canvas.getContext('2d').
     drawImage(video, 0, 0, canvas.width, canvas.height);
 };
+
+setInterval(captureFrame, 3000);
 
 var constraints = {
   audio: false,

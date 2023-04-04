@@ -1,2 +1,5 @@
 # gignoskein
-to know
+
+brew install awscli
+aws configure
+./deploy.sh
